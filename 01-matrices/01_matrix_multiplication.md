@@ -49,12 +49,13 @@ B = \begin{bmatrix}
   $$(4 \times 8) + (5 \times 10) + (6 \times 12) = 32 + 50 + 72 = 154$$
 
 **Final Result:**
-$$
+
+```math
 C = \begin{bmatrix} 
 58 & 64 \\ 
 139 & 154 
 \end{bmatrix}
-$$
+```
 
 ---
 
