@@ -21,7 +21,7 @@ $$c_{ij} = \sum_{k=1}^{n} a_{ik}b_{kj}$$
 Let’s multiply a $2 \times 3$ matrix by a $3 \times 2$ matrix.
 
 **Given Matrices:**
-```math
+$$
 A = \begin{bmatrix} 
 1 & 2 & 3 \\ 
 4 & 5 & 6 
@@ -30,7 +30,8 @@ B = \begin{bmatrix}
 7 & 8 \\ 
 9 & 10 \\ 
 11 & 12 
-\end{bmatrix}```
+\end{bmatrix}
+$$
 
 
 **Calculation for Resulting Matrix $C$ ($2 \times 2$):**
