@@ -46,7 +46,7 @@ We apply $R_2 \to R_2 - R_1$ and $R_3 \to R_3 - 2R_1$ simultaneously:
 **Step 2: Use $R_2$ to clear the second column.**
 Apply $R_3 \to R_3 - R_2$:
 ```math
-\begin{bmatrix} 1 & 2 & 3 \\ 0 & 2 & -1 \\ 0 & 2 & -1 \end{bmatrix} \quad \text{R}_3-R_2 \to \quad \begin{bmatrix} 1 & 2 & 3 \\ 0 & 2 & -1 \\ 0 & 0 & 0 \end{bmatrix}
+\begin{bmatrix} 1 & 2 & 3 \\ 0 & 2 & -1 \\ 0 & 2 & -1 \end{bmatrix} \quad \text{R}_3-\text{R}_2 \to \quad \begin{bmatrix} 1 & 2 & 3 \\ 0 & 2 & -1 \\ 0 & 0 & 0 \end{bmatrix}
 ```
 
 ---
