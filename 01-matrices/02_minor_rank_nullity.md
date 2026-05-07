@@ -25,8 +25,8 @@ A number $r$ is the **rank** of matrix $A$ if it obeys these two conditions:
 | Matrix Type | Rank Property |
 | :--- | :--- |
 | **Zero Matrix** | Always $0$ |
-| **Unit Matrix ($I_n$)** | Always $n$ |
-| **Non-Singular ($|A| \neq 0$)** | Rank equals the order $n$ |
+| **Unit Matrix** ( $I_n$ )| Always $n$ |
+| **Non-Singular** ( det $A$ $\neq$ $0$ )| Rank equals the order $n$ |
 
 ---
 
@@ -45,7 +45,7 @@ While the "Minor Method" works for small matrices, the **Echelon Form** (using R
 ### The Problem
 Find the rank and nullity of the matrix $A$:
 ```math
-A = \begin{pmatrix} 3 & 2 & 5 \\ -1 & 0 & 6 \\ 7 & 8 & 3 \end{pmatrix}
+A = \begin{bmatrix} 3 & 2 & 5 \\ -1 & 0 & 6 \\ 7 & 8 & 3 \end{bmatrix}
 ```
 
 ### Step-by-Step Transformation
@@ -54,19 +54,23 @@ To find the rank, we reduce the matrix to a form where all elements below the di
 **Step 1: Get a '1' in the top left ($a_{11}$) for easier calculation.**
 Swap $R_1$ and $R_2$, then multiply the new $R_1$ by $-1$:
 ```math
-\begin{pmatrix} 3 & 2 & 5 \\ -1 & 0 & 6 \\ 7 & 8 & 3 \end{pmatrix} \rightarrow \begin{pmatrix} -1 & 0 & 6 \\ 3 & 2 & 5 \\ 7 & 8 & 3 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & 0 & -6 \\ 3 & 2 & 5 \\ 7 & 8 & 3 \end{pmatrix}
+\begin{bmatrix} 3 & 2 & 5 \\ -1 & 0 & 6 \\ 7 & 8 & 3 \end{bmatrix}
+\rightarrow
+\begin{bmatrix} -1 & 0 & 6 \\ 3 & 2 & 5 \\ 7 & 8 & 3 \end{bmatrix}
+\rightarrow
+\begin{bmatrix} 1 & 0 & -6 \\ 3 & 2 & 5 \\ 7 & 8 & 3 \end{bmatrix}
 ```
 
 **Step 2: Create zeros in the first column.**
 Apply $R_2 \to R_2 - 3R_1$ and $R_3 \to R_3 - 7R_1$:
 ```math
-\begin{pmatrix} 1 & 0 & -6 \\ 0 & 2 & 23 \\ 0 & 8 & 45 \end{pmatrix}
+\begin{bmatrix} 1 & 0 & -6 \\ 0 & 2 & 23 \\ 0 & 8 & 45 \end{bmatrix}
 ```
 
 **Step 3: Create a zero in the third row, second column.**
 Apply $R_3 \to R_3 - 4R_2$:
 ```math
-\begin{pmatrix} 1 & 0 & -6 \\ 0 & 2 & 23 \\ 0 & 0 & -47 \end{pmatrix}
+\begin{bmatrix} 1 & 0 & -6 \\ 0 & 2 & 23 \\ 0 & 0 & -47 \end{bmatrix}
 ```
 
 ### Final Analysis
