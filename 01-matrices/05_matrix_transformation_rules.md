@@ -21,9 +21,9 @@ You can swap any two rows. This is usually done to get a "1" or a non-zero numbe
 You can multiply or divide an entire row by any non-zero constant ($k$). 
 *   **Notation:** $R_i \to kR_i$
 *   **Example:** Divide Row 1 by 5 to get a leading 1.
-$$
-\begin{bmatrix} 5 & 10 \\ 0 & 1 \end{bmatrix} \xrightarrow{R_1 \to \frac{1}{5}R_1} \begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix}
-$$
+```math
+\begin{bmatrix} 5 & 10 \\ 0 & 1 \end{bmatrix} \rightarrow \begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix}
+```
 
 ### III. The Combine (Addition/Subtraction)
 You can add or subtract a multiple of one row to another row. This is the primary tool for creating **zeros** below your pivots.
@@ -32,9 +32,9 @@ You can add or subtract a multiple of one row to another row. This is the primar
     *   If signs are the **same**: Subtract ($R_2 - kR_1$)
     *   If signs are **opposite**: Add ($R_2 + kR_1$)
 *   **Example:** Use Row 1 to create a zero in Row 2.
-$$
+```math
 \begin{bmatrix} 1 & 2 \\ 3 & 8 \end{bmatrix} \xrightarrow{R_2 \to R_2 - 3R_1} \begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix}
-$$
+```
 
 ---
 
