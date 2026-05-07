@@ -33,7 +33,7 @@ You can add or subtract a multiple of one row to another row. This is the primar
     *   If signs are **opposite**: Add ($R_2 + kR_1$)
 *   **Example:** Use Row 1 to create a zero in Row 2.
 ```math
-\begin{bmatrix} 1 & 2 \\ 3 & 8 \end{bmatrix} \xrightarrow{R_2 \to R_2 - 3R_1} \begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix}
+\begin{bmatrix} 1 & 2 \\ 3 & 8 \end{bmatrix} \rightarrow \begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix}
 ```
 
 ---
