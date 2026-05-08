@@ -78,23 +78,111 @@ $$
 
 By continuing elementary operations ($R_2 \to R_2 + 2R_3$, then clearing the remaining constants), the matrix reduces to its canonical identity structure.
 
+### Step 5: Initial State and Pivot 1
+The first pivot $a_{11}$ is already $1$, and its column is cleared.
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & -16 & -7 & -24 \\
+0 & 10 & 0 & 0
+\end{bmatrix}
+\left(R_2 \leftrightarrow R_3\right) \longrightarrow
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 10 & 0 & 0 \\
+0 & -16 & -7 & -24
+\end{bmatrix}
+$$
+
+### Step 6: Establishing Pivot 2
+We normalize the second row to get a leading $1$ at $a_{22}$.
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 10 & 0 & 0 \\
+0 & -16 & -7 & -24
+\end{bmatrix}
+\left(R_2 \to \frac{1}{10}R_2\right) \longrightarrow
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & -16 & -7 & -24
+\end{bmatrix}
+$$
+
+### Step 7: Vertical Clearing (Row Operations)
+Use the new pivot at $a_{22}$ to clear the value below it in $R_3$.
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & -16 & -7 & -24
+\end{bmatrix}
+\left(R_3 \to R_3 + 16R_2\right) \longrightarrow
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & -7 & -24
+\end{bmatrix}
+$$
+
+### Step 8: Establishing Pivot 3
+We normalize the third row to get a leading $1$ at $a_{33}$.
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & -7 & -24
+\end{bmatrix}
+\left(R_3 \to -\frac{1}{7}R_3\right) \longrightarrow
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & \frac{24}{7}
+\end{bmatrix}
+$$
+
+### Step 9: Horizontal Clearing (Column Operations)
+Finally, we use column operations to eliminate any remaining values to the right of our pivots to reach the identity structure.
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & \frac{24}{7}
+\end{bmatrix}
+\left(C_4 \to C_4 - \frac{24}{7}C_3\right) \longrightarrow
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0
+\end{bmatrix}
+$$
+
 ---
 
-## 3. Final Normal Form
-
-After completing all row and column eliminations, we arrive at:
+## 10. Final Result
+The matrix is now in the form $[I_3 \mid 0]$.
+*   **Rank of the Matrix ($r$)**: 3
+*   **Canonical Form**: 
 ```math
 \begin{bmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
-0 & 0 & 1 & 0 \\
+0 & 0 & 1 & 0
 \end{bmatrix}
 ```
 
 Which is represented as:
-$$
-[ I_3 \mid 0 ]
-$$
+```math
+\begin{bmatrix}
+I_3 & 0 \\
+\end{bmatrix}
+```
 
 ### 4. Conclusion
 * **Normal Form:** $[I_3 \mid 0]$
