@@ -102,3 +102,28 @@ Once in Echelon form, we solve from the bottom up:
 3.  From $R_{1}$: $x + 2y + 3z = 14 \implies x + 2(2) + 3(3) = 14 \implies x = 1$
 
 **Solution:** $(x, y, z) = (1, 2, 3)$
+
+---
+## Working Rule for Consistency of Linear Equations
+
+1. **Represent the System:** 
+   Let the given system of linear equations be represented in matrix form as:
+   $$AX = B \quad \dots (1)$$
+
+2. **Form the Augmented Matrix:** 
+   Find the augmented matrix $[A|B]$ for the system (1).
+
+3. **Row Reduction:** 
+   Transform the augmented matrix $[A|B]$ into **Echelon Form**. Once in echelon form, observe the rank of the coefficient matrix $A$, denoted as $\rho(A)$, and the rank of the augmented matrix $[A|B]$, denoted as $\rho(A|B)$.
+
+4. **Consistency Analysis:**
+
+   *   **Case 1: Inconsistent System**
+       If $\text{Rank}(A) \neq \text{Rank}(A|B)$, the system is **inconsistent** and has **no solution**.
+
+   *   **Case 2: Consistent with Unique Solution**
+       If $\text{Rank}(A) = \text{Rank}(A|B) = n$ (where $n$ is the number of unknown variables), the system is **consistent** and has a **unique solution**.
+
+   *   **Case 3: Consistent with Infinite Solutions**
+       If $\text{Rank}(A) = \text{Rank}(A|B) = r < n$ (where $n$ is the number of variables), the system is **consistent** and has **infinitely many solutions**.
+       * In this case, $(n - r)$ variables must be chosen arbitrarily.
