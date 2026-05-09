@@ -106,3 +106,7 @@ From $R_1$:
 $$x + 2(2) + 3(3) = 14 \implies x + 4 + 9 = 14 \implies x = 1$$
 
 **Final Result Set:** $(x, y, z) = (1, 2, 3)$.
+
+### Post-Transformation Insights
+* **The "End State" Logic:** A matrix has reached its final Row Echelon Form when each leading entry (pivot) is to the right of the pivot in the row above it, and all entries below these pivots are zero. Once this "staircase" is established and no more non-zero entries exist below the pivots to eliminate, the transformation is complete.
+*  **The Role of Back-Substitution:** The transformed matrix represents a simplified system of equations where the final row typically contains only one variable. By solving this last variable first and "plugging" it back into the preceding equations, we systematically unlock the values of the remaining unknowns.
