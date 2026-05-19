@@ -154,3 +154,90 @@ $$\frac{\partial u}{\partial x} = \cos y \times (10^x \log 10)$$
 Reorder the factors:
 
 $$\frac{\partial u}{\partial x} = 10^x \log 10 \cdot \cos y$$
+
+---
+
+### Problem 1: Constant Coefficients and Product Terms
+Given the function:
+$$z = ax^2 + by^2 + 2abxy$$
+
+Find the partial derivative with respect to $x$, denoted as $\frac{\partial z}{\partial x}$.
+
+#### Step-by-Step Solution
+Differentiate each term sequentially with respect to $x$, treating $a$, $b$, and $y$ as constants:
+
+For the first term $ax^2$, apply the standard power rule:
+$$\frac{\partial}{\partial x}(ax^2) = 2ax$$
+
+For the second term $by^2$, because there is no $x$ component present, the entire term behaves as a standalone constant:
+$$\frac{\partial}{\partial x}(by^2) = 0$$
+
+For the third term $2abxy$, treat $2aby$ as a collective constant multiplier for $x$:
+$$\frac{\partial}{\partial x}(2abxy) = 2aby \cdot \frac{\partial}{\partial x}(x) = 2aby(1)$$
+
+Combine the evaluations to form the complete derivative:
+
+$$\frac{\partial z}{\partial x} = 2ax + 0 + 2aby$$
+
+$$\frac{\partial z}{\partial x} = 2(ax + aby)$$
+
+---
+
+### Problem 2: Quotient Rule Optimization
+Given the implicit equation:
+$$z(x + y) = x - y$$
+
+Find the value of the expression:
+$$\left(\frac{\partial z}{\partial x} - \frac{\partial z}{\partial y}\right)^2$$
+
+#### Step-by-Step Solution
+
+##### Step 2.1: Isolate the Dependent Variable
+Rearrange the equation to express $z$ explicitly as a function of $x$ and $y$:
+
+$$z = \frac{x - y}{x + y}$$
+
+This sets up a quotient form $\frac{u}{v}$. Recall the Quotient Rule for differentiation: $\frac{v \cdot u' - u \cdot v'}{v^2}$.
+
+##### Step 2.2: Compute $\frac{\partial z}{\partial x}$
+Treat $y$ as a constant. Differentiate the numerator and denominator with respect to $x$:
+
+$$\frac{\partial z}{\partial x} = \frac{(x + y) \cdot \frac{\partial}{\partial x}(x - y) - (x - y) \cdot \frac{\partial}{\partial x}(x + y)}{(x + y)^2}$$
+
+$$\frac{\partial z}{\partial x} = \frac{(x + y)(1 - 0) - (x - y)(1 + 0)}{(x + y)^2}$$
+
+$$\frac{\partial z}{\partial x} = \frac{x + y - x + y}{(x + y)^2}$$
+
+$$\frac{\partial z}{\partial x} = \frac{2y}{(x + y)^2}$$
+
+##### Step 2.3: Compute $\frac{\partial z}{\partial y}$
+Treat $x$ as a constant. Differentiate the numerator and denominator with respect to $y$:
+
+$$\frac{\partial z}{\partial y} = \frac{(x + y) \cdot \frac{\partial}{\partial y}(x - y) - (x - y) \cdot \frac{\partial}{\partial y}(x + y)}{(x + y)^2}$$
+
+$$\frac{\partial z}{\partial y} = \frac{(x + y)(0 - 1) - (x - y)(0 + 1)}{(x + y)^2}$$
+
+$$\frac{\partial z}{\partial y} = \frac{-(x + y) - (x - y)}{(x + y)^2}$$
+
+$$\frac{\partial z}{\partial y} = \frac{-x - y - x + y}{(x + y)^2}$$
+
+$$\frac{\partial z}{\partial y} = \frac{-2x}{(x + y)^2}$$
+
+##### Step 2.4: Substitute into the Target Expression
+Evaluate the difference internal to the bracket:
+
+$$\frac{\partial z}{\partial x} - \frac{\partial z}{\partial y} = \frac{2y}{(x + y)^2} - \left(\frac{-2x}{(x + y)^2}\right)$$
+
+$$\frac{\partial z}{\partial x} - \frac{\partial z}{\partial y} = \frac{2y + 2x}{(x + y)^2}$$
+
+Factor out $2$ from the numerator to enable cancellation:
+
+$$\frac{\partial z}{\partial x} - \frac{\partial z}{\partial y} = \frac{2(x + y)}{(x + y)^2}$$
+
+$$\frac{\partial z}{\partial x} - \frac{\partial z}{\partial y} = \frac{2}{x + y}$$
+
+Square the resulting fraction to complete the problem requirements:
+
+$$\left(\frac{\partial z}{\partial x} - \frac{\partial z}{\partial y}\right)^2 = \left(\frac{2}{x + y}\right)^2$$
+
+$$\left(\frac{\partial z}{\partial x} - \frac{\partial z}{\partial y}\right)^2 = \frac{4}{(x + y)^2}$$
