@@ -1,3 +1,14 @@
+> [!WARNING]
+> ### 🛑 Please Read the PDF Files Instead of the `.md` Previews!
+> 
+> If you are browsing these notes, **always download or view the `.pdf` versions** available in the folders. 
+> 
+> **Why?** 
+> GitHub's native Markdown engine uses a highly restrictive, server-side LaTeX renderer that is notoriously glitchy. It frequently fails to parse complex mathematical environments (like multi-line alignments, matrices, and custom symbols). Furthermore, this rendering **completely breaks on the GitHub mobile app**, turning equations into unreadable code blocks.
+> 
+> The `.pdf` files were compiled locally using a dedicated browser engine, guaranteeing that 100% of the mathematical formulas, proofs, and structures render flawlessly. Use the `.md` files strictly if you wish to copy the source raw text/LaTeX code.
+
+
 # 📕 Guide: Creating Perfect Math PDFs from VS Code
 
 This guide outlines the foolproof method to convert Markdown + LaTeX notes into pristine, textbook-quality PDFs that are **100% immune to GitHub's glitchy online rendering engine**.
